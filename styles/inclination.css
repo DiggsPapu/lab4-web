@@ -1,0 +1,28 @@
+.incline_90deg{
+    transform: rotate(-90deg) translate(-50%,-50%);
+}
+.incline_180deg{
+    transform: rotate(-180deg) translate(-50%,-50%);
+}
+.incline_270deg{
+    transform: rotate(-270) translate(-50%,-50%);
+}
+.incline_50deg{
+    transform: rotate(20deg) translate(50%,50%);
+}
+.incline_80deg{
+    transform:rotate(80deg)
+}
+.incline_10deg{
+    transform:rotate(10deg)
+}
+.incline_5deg{
+    transform:rotate(5deg)
+}
+.incline_350deg{
+    transform:rotate(350deg)
+}
+.reflection_left{
+    -webkit-box-reflect:left;
+
+}

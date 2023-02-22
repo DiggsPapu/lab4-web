@@ -1,0 +1,16 @@
+.smaller_third{
+    transform: scale(0.3);
+}
+.smaller_half{
+    transform: scale(0.5);
+}
+.smaller_60{
+    transform: scale(0.6);
+}
+.smaller_70{
+    transform: scale(0.75);
+}
+
+.bigger_10{
+    transform:scale(1.1)
+}

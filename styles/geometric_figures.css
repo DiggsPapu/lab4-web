@@ -1,0 +1,103 @@
+*.semicircle{
+    width: 220px;
+    height:130px;
+    border-radius: 12rem 12rem 0 0;
+    background-color: #ef9051;
+    border-color: #ef9051;
+}
+.line {
+    border-bottom: 1px solid black;
+    margin-top: 1px;
+    width: 50%;  
+    bottom: 100%;  
+}
+.rectangle{
+    width: 132px;
+    height: 55px;
+    background-color: #ef9051;
+}
+.oval {
+    width: 200px;
+    height: 140px;
+    background-color: #ef9051;
+    border-radius: 100%;
+  }
+.box{
+    width: 80px;
+    height: 100px;
+    background: black;
+}
+
+.height{
+    height:200px;  
+}
+.long_oval{
+    width: 100px;
+    height: 25px;
+    background: #00ffc8;
+    border-radius: 1000%;
+}
+.trapezoid{
+    width: 65px;
+    height: 0px;
+    border-right: 120px solid transparent;
+    border-left: 40px solid transparent;
+    border-bottom: 200px solid rgb(170, 20, 20);
+}
+.inclined_box{
+    width: 100%; 
+     height: 180px; 
+     background: white;
+     -webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+     -ms-transform: skew(20deg);
+     -o-transform: skew(20deg);
+     transform: skew(20deg);
+}
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-top: 125px solid #ef9051;
+}
+div article{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    color: white;
+}
+.one_sided_round_rectangle{
+    height: 145px;
+    width: 150px;
+    background-color: black;
+    border-radius: 100%;
+    border-bottom-left-radius: 0%30px;
+    border-bottom-right-radius: 0%30px;
+}
+.one_sided_round_rectangle_long{
+    height: 250px;
+    width: 170px;
+    background-color: black;
+    border-radius: 100%;
+    border-bottom-left-radius: 0%30px;
+    border-bottom-right-radius: 0%30px;
+}
+.box_curves_horizontal{
+    height: 400px;
+    width: 200px;
+    background-color: black;
+    border-color: white 30px;
+}
+.cone{
+    width: 0;
+	height: 0;
+    border-radius: 49%;
+	border-left: 69px solid transparent;
+	border-right: 69px solid transparent;
+	border-top: 150px solid #ef9051;
+}
+.face{
+    clip-path: path("m -1 -2 C 1 3 4 7 8 10 C 11 7 14 3 16 -2 C 14 -3 14 -6 15 -7 A 1 1 0 0 0 0 -7 C 1 -6 1 -3 -1 -2");
+    background-color: #ef9051;
+}
