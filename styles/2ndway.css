@@ -1,0 +1,67 @@
+.Kuzco{
+    --skin: rgb(255, 190, 111) ;
+    --skin-shadow: rgba(214, 156, 117, 0.192);
+    --hair: rgb(0,0,0);
+    --line: rgba(80,0,0,0.15);
+    --border-color: rgb(155, 94, 20);
+}
+.face{
+    background: var(--skin);
+    clip-path: path(evenodd,"M 424 170 A 1 1 0 0 0 115 170 c 10 33 9 73 -7 114 V 284 C 149 383 207 458 277 536 C 345 455 393 383 424 284 C 405 245 410 208 424 170");
+    height: 536px;
+    width: 423px;
+    border-color: black;
+    border-width: 10px 10px 10px 10px;
+}
+.border-face{
+    background: var(--border-color);
+    clip-path: path(evenodd,"M 424 170 A 1 1 0 0 0 115 170 c 10 33 9 73 -7 114 V 284 C 149 383 207 458 277 536 C 345 455 393 383 424 284 C 405 245 410 208 424 170");
+    height: 537px;
+    width: 424px;
+    border-color: black;
+    border-width: 10px 10px 10px 10px;
+}
+.eye{
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    border-color: black;
+    border-width: 10px 10px 10px 10px;
+    transform:translate(150px, 150px);
+}
+.ear{
+    width: 100px;
+    height:110px;
+    border-radius: 0 70px;
+    background-color: var(--skin);
+    border-color: black;
+    border-width: 10px 10px 10px 10px;
+}
+.border-ear{
+    background: var(--border-color);
+    width: 100px;
+    height:110px;
+    border-radius: 0 70px;
+    border-color: var(--border-color);
+    border-width: 10px 10px 10px 10px;
+}
+.earring{
+    width: 70px;
+    height: 300px;
+    background: #00d5ff;
+    border-radius: 1000%;
+}
+.border-earring{
+    width: 70px;
+    height: 300px;
+    background: #0a7584;
+    border-radius: 1000%;
+}
+.eyebrow-left{
+    width: 270px;
+    height:50px;
+    border-radius: 0 10rem 0 12rem;
+    background-color: black;
+    border-color: #ef9051;
+}

@@ -70,3 +70,40 @@
 .bottom{
     z-index: -1;
 }
+.left_ear_pos{
+    /* transform: translateY(-140px) rotate(30deg); */
+    transform: translateY(470px) translateX(-10px) rotate(35deg);
+}
+.left_earring_pos{
+    transform: translateY(-37px) translateX(145px) rotate(-35deg);
+}
+.left_earst_pos{
+    transform: translateY(-190px) translateX(30px);
+}
+.right_ear_pos{
+    transform: translateY(640px) translateX(270px) rotate(50deg);
+}
+.right_earring_pos{
+    transform: translateY(-40px) translateX(125px) rotate(-25deg);
+}
+.right_earst_pos{
+    transform: translateY(-225px) translateX(60px);
+}
+.crown_pos{
+    transform: translateY(-705px) translateX(280px) rotate(5deg);
+}
+.lil_crown_pos{
+    transform: translateY(-12px) translateX(-230px) rotate(180deg);
+}
+.face_pos{
+    transform: translateY(-100px);
+}
+.all-face-pos{
+    transform: translateY(-60px);
+}
+.white-clothe{
+    transform: translateY(1.3px) translateX(80px);
+}
+.a-crown{
+    transform: translateY(-20px);
+}
