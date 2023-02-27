@@ -157,7 +157,7 @@
 .nose_1{
     width: 50px;
     height: 15px;
-    border:solid 1px;
+    border:solid 2px;
     border-left: 0%;
     border-color:var(--border-color) var(--border-color) transparent transparent  ;
     border-bottom-right-radius: 100%;
@@ -168,16 +168,32 @@
 .nose_2{
     width: 50px;
     height: 15px;
-    border:solid 1px;
+    border:solid 2px;
     border-left: 0%;
     border-color:transparent var(--border-color) var(--border-color) transparent  ;
     border-bottom-right-radius: 100%;
     border-top-right-radius: 100%;
     border-radius:100%/1px;
 }
+.nose{
+    transform: rotate(11deg) translate(30px, 40px);
+}
 .nose_1 + .nose_2{
     transform: translateY(62px) translateX(235px) rotate(-40deg);
 }
-.nose{
-    transform: rotate(11deg) translate(30px, 40px);
+.smile{
+    width: 150px;
+    height:30px;
+    border-radius: 12rem 12rem 0 0;
+    border: solid 1px;
+    border-color: var(--border-color) transparent transparent transparent;
+    transform: rotate(180deg) translateX(-185px) translateY(-120px);
+}
+.smile_2{
+    width: 120px;
+    height: 20px;
+    border: solid 1px;
+    border-radius: 0 0 12rem 12rem;
+    border-color: transparent var(--border-color) var(--border-color)  var(--border-color);
+    transform: translateX(200px) translateY(130px);
 }
