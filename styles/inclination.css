@@ -8,7 +8,7 @@
     transform: rotate(-270) translate(-50%,-50%);
 }
 .incline_50deg{
-    transform: rotate(20deg) translate(50%,50%);
+    transform: rotate(-20deg);
 }
 .incline_80deg{
     transform:rotate(80deg)

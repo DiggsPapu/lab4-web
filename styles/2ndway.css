@@ -4,6 +4,9 @@
     --hair: rgb(0,0,0);
     --line: rgba(80,0,0,0.15);
     --border-color: rgb(155, 94, 20);
+    margin: 45%;
+    width: 50%;
+    padding: 10px;
 }
 .face{
     background: var(--skin);
@@ -13,55 +16,168 @@
     border-color: black;
     border-width: 10px 10px 10px 10px;
 }
+.border-face .face{
+    transform: scale(0.996) translateX(0.2px) translateY(0.1);
+}
 .border-face{
     background: var(--border-color);
     clip-path: path(evenodd,"M 424 170 A 1 1 0 0 0 115 170 c 10 33 9 73 -7 114 V 284 C 149 383 207 458 277 536 C 345 455 393 383 424 284 C 405 245 410 208 424 170");
-    height: 537px;
-    width: 424px;
+    height: 536px;
+    width: 423px;
     border-color: black;
     border-width: 10px 10px 10px 10px;
+    transform: translateY(-1300px) translateX(500px);
+}
+.eye-right{
+    transform:translate(150px, 110px);
+}
+.eye-left{
+    transform: translate(300px,80px);
 }
 .eye{
-    width: 100px;
-    height: 50px;
+    width: 70px;
+    height: 30px;
     background-color: white;
     border-radius: 100%;
-    border-color: black;
     border-width: 10px 10px 10px 10px;
-    transform:translate(150px, 150px);
+    border-radius: 0rem 0rem 3rem 3rem;
+    background-color: black;
+}
+.eye .eye{
+    background: white;
+    transform: scale(0.99);
+}
+.eye .eye .eye{
+    transform: scale(0.6) translateY(-8px);   
+    background: black;
+}
+.pupil{
+    width: 12px;
+    height:12px;
+    border-radius: 12rem 12rem 12rem 12rem;
+    background: white;
+    border-radius: 100%;
+    transform: translateX(7px) translateY(10px);
+}
+.eyepil{
+    width: 60px;
+    height: 20px;
+    border:solid 1px;
+    border-color:var(--border-color) transparent transparent transparent;
+    border-radius:  100%/20px 20px 0 0  ;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+    transform: translateY(135px) translateX(140px) rotate(-50deg);
+}
+.eyepil + .eyepil{
+    width: 70px;
+    height: 20px;
+    border:solid 1px;
+    border-color:var(--border-color) transparent transparent transparent;
+    border-radius: 100%/50px 50px 0 0px;
+    transform: translateX(305px) translateY(110px) rotate(0deg);
+}
+.eyelash{
+    width: 80px;
+    height: 20px;
+    border:solid 4px;
+    border-color:black transparent transparent transparent;
+    border-radius:  100%/20px 20px 0 0  ;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%; 
+}
+.eye .eyelash{
+    transform: translateX(-9px) translateY(-32px);
 }
 .ear{
     width: 100px;
     height:110px;
     border-radius: 0 70px;
-    background-color: var(--skin);
+    background-color: var(--border-color);
     border-color: black;
     border-width: 10px 10px 10px 10px;
 }
-.border-ear{
-    background: var(--border-color);
-    width: 100px;
-    height:110px;
-    border-radius: 0 70px;
-    border-color: var(--border-color);
-    border-width: 10px 10px 10px 10px;
+.ear .ear{
+    background-color: var(--skin);
+    transform: scale(0.99) translateX(1.1px) translateY(-0.5px);
+}
+.ear + .ear{
+    transform: translateX(350px) rotate(60deg);
 }
 .earring{
-    width: 70px;
-    height: 300px;
-    background: #00d5ff;
-    border-radius: 1000%;
-}
-.border-earring{
     width: 70px;
     height: 300px;
     background: #0a7584;
     border-radius: 1000%;
 }
+.earring .earring{
+    background: #00d5ff;
+    transform: scale(0.999) translateX(0.1px);
+}
+.earring+.earring{
+    transform: translateX(350px);
+}
 .eyebrow-left{
-    width: 270px;
-    height:50px;
-    border-radius: 0 10rem 0 12rem;
-    background-color: black;
-    border-color: #ef9051;
+    width: 70px;
+    height:5px;
+    border:solid 15px #000;
+    border-color:#000 transparent transparent transparent ;
+    border-radius: 75%/10px 10px 0 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform: translateX(150px) translateY(100px);
+
+}
+.eyebrow-right{
+    width: 100px;
+    height:15px;
+    background: black;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 0%;
+    transform: rotate(40deg);
+}
+.face > .eyebrow-left{
+    transform: translateX(140px) translateY(140px);
+}
+.face > .eyebrow-right{
+    transform: translateX(300px) translateY(80px) rotate(10deg);
+}
+.nose_long{
+    width: 160px;
+    height: 20px;
+    border:solid 1px;
+    border-color:var(--border-color) transparent transparent transparent;
+    border-radius:  100%/20px 20px 0 0  ;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+    transform: translateY(70px) translateX(160px) rotate(-83deg);
+}
+.nose_1{
+    width: 50px;
+    height: 15px;
+    border:solid 1px;
+    border-left: 0%;
+    border-color:var(--border-color) var(--border-color) transparent transparent  ;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+    transform: translateY(90px) translateX(200px) rotate(-170deg);
+    border-radius:100%/1px;
+}
+.nose_2{
+    width: 50px;
+    height: 15px;
+    border:solid 1px;
+    border-left: 0%;
+    border-color:transparent var(--border-color) var(--border-color) transparent  ;
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
+    border-radius:100%/1px;
+}
+.nose_1 + .nose_2{
+    transform: translateY(62px) translateX(235px) rotate(-40deg);
+}
+.nose{
+    transform: rotate(11deg) translate(30px, 40px);
 }
