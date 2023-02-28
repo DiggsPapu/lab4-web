@@ -11,11 +11,11 @@
     padding: 10px;
 }
 .head{
-    transform: translateY(-1700px) translateX(-400px) rotate(-20deg);
+    transform: translateY(-1500px) translateX(-130px) rotate(-20deg);
 }
 .hair{
     height: 750px;
-    width: 350px;
+    width: 400px;
     background-color: var(--hair);
     border-radius: 100%;
     border-bottom-left-radius: 0%30px;
@@ -172,7 +172,6 @@
     width: 120px;
     height: 20px;
     border-color: var(--border-color) transparent transparent  transparent;
-    
     transform: translateX(200px) translateY(130px)rotate(180deg);
 }
 .ear{
@@ -197,16 +196,41 @@
 .left-ear .ear{
     transform:rotate(30deg)
 }
+.left-ear .earring{
+    transform: rotate(10deg);
+}
 .right-ear{
     transform: translateY(600px) translateX(380px) ;
 }
 .right-ear .ear{
     transform:rotate(50deg)
 }
+.right-ear .earring{
+    transform: rotate(20deg) translateX(-40px);
+}
+.fringe{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid black;
+    border-bottom: 100px solid transparent;
+    transform: translateY(-440px) translateX(180px) rotate(-10deg);
+}
+.fringe~.fringe{
+    transform: translateY(-800px) translateX(130px) rotate(-10deg);
+}
+.fringe:last-child{
+    width: 0;
+    height: 0;
+    border-left: 140px solid transparent;
+    border-right: 140px solid black;
+    border-bottom: 140px solid transparent;
+    transform: translateY(-550px) translateX(150px) rotate(-10deg);
+}
 .crown{
     --crown:rgb(253, 230, 58);
     --bordercrown:rgb(204, 186, 48);
-    transform: translateY(-1800px) translateX(650px) rotate(-20deg);
+    transform: translateY(-2300px) translateX(100px) rotate(-20deg);
 }
 .border-crown_top{
     width: 700px;
