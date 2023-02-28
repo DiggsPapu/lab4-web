@@ -1,5 +1,7 @@
+@import "geometric_figures.css";
 .Kuzco{
     --skin: rgb(255, 190, 111) ;
+    --border-skin:rgb(218, 163, 96);
     --skin-shadow: rgba(214, 156, 117, 0.192);
     --hair: rgb(0,0,0);
     --line: rgba(80,0,0,0.15);
@@ -8,25 +10,36 @@
     width: 50%;
     padding: 10px;
 }
+.head{
+    transform: translateY(-1700px) translateX(-400px) rotate(-20deg);
+}
+.hair{
+    height: 750px;
+    width: 350px;
+    background-color: var(--hair);
+    border-radius: 100%;
+    border-bottom-left-radius: 0%30px;
+    border-bottom-right-radius: 0%30px;
+}
+.border-face{
+    background: var(--border-skin);
+    border: solid 1px; 
+    border-color: var(--border-skin);
+    clip-path: path(evenodd,"M 424 170 A 1 1 0 0 0 115 170 c 10 33 9 73 -7 114 V 284 C 149 383 207 458 277 536 C 345 455 393 383 424 284 C 405 245 410 208 424 170");
+    height: 536px;
+    width: 423px;
+}
 .face{
     background: var(--skin);
     clip-path: path(evenodd,"M 424 170 A 1 1 0 0 0 115 170 c 10 33 9 73 -7 114 V 284 C 149 383 207 458 277 536 C 345 455 393 383 424 284 C 405 245 410 208 424 170");
     height: 536px;
     width: 423px;
-    border-color: black;
+    border: solid 1px;
+    border-color: var(--border-skin);
     border-width: 10px 10px 10px 10px;
 }
 .border-face .face{
-    transform: scale(0.996) translateX(0.2px) translateY(0.1);
-}
-.border-face{
-    background: var(--border-color);
-    clip-path: path(evenodd,"M 424 170 A 1 1 0 0 0 115 170 c 10 33 9 73 -7 114 V 284 C 149 383 207 458 277 536 C 345 455 393 383 424 284 C 405 245 410 208 424 170");
-    height: 536px;
-    width: 423px;
-    border-color: black;
-    border-width: 10px 10px 10px 10px;
-    transform: translateY(-1300px) translateX(500px);
+    transform: scale(0.994) translateY(-2px) translateX(-1px);
 }
 .eye-right{
     transform:translate(150px, 110px);
@@ -89,34 +102,6 @@
 .eye .eyelash{
     transform: translateX(-9px) translateY(-32px);
 }
-.ear{
-    width: 100px;
-    height:110px;
-    border-radius: 0 70px;
-    background-color: var(--border-color);
-    border-color: black;
-    border-width: 10px 10px 10px 10px;
-}
-.ear .ear{
-    background-color: var(--skin);
-    transform: scale(0.99) translateX(1.1px) translateY(-0.5px);
-}
-.ear + .ear{
-    transform: translateX(350px) rotate(60deg);
-}
-.earring{
-    width: 70px;
-    height: 300px;
-    background: #0a7584;
-    border-radius: 1000%;
-}
-.earring .earring{
-    background: #00d5ff;
-    transform: scale(0.999) translateX(0.1px);
-}
-.earring+.earring{
-    transform: translateX(350px);
-}
 .eyebrow-left{
     width: 70px;
     height:5px;
@@ -144,7 +129,10 @@
 .face > .eyebrow-right{
     transform: translateX(300px) translateY(80px) rotate(10deg);
 }
-.nose_long{
+.nose{
+    transform: rotate(11deg) translate(30px, 40px);
+}
+.nose_large{
     width: 160px;
     height: 20px;
     border:solid 1px;
@@ -152,9 +140,9 @@
     border-radius:  100%/20px 20px 0 0  ;
     border-bottom-right-radius: 100%;
     border-top-right-radius: 100%;
-    transform: translateY(70px) translateX(160px) rotate(-83deg);
+    transform: translateY(20px) translateX(140px) rotate(-90deg);
 }
-.nose_1{
+.nose_point{
     width: 50px;
     height: 15px;
     border:solid 2px;
@@ -165,21 +153,12 @@
     transform: translateY(90px) translateX(200px) rotate(-170deg);
     border-radius:100%/1px;
 }
-.nose_2{
-    width: 50px;
-    height: 15px;
-    border:solid 2px;
-    border-left: 0%;
-    border-color:transparent var(--border-color) var(--border-color) transparent  ;
-    border-bottom-right-radius: 100%;
-    border-top-right-radius: 100%;
-    border-radius:100%/1px;
+.nose_point:first-child{
+    transform: translateY(-80px);
 }
-.nose{
-    transform: rotate(11deg) translate(30px, 40px);
-}
-.nose_1 + .nose_2{
-    transform: translateY(62px) translateX(235px) rotate(-40deg);
+.nose_point:last-child{
+    border-color:var(--border-color) transparent transparent var(--border-color);
+    transform: translateX(230px) translateY(60px) rotate(130deg);
 }
 .smile{
     width: 150px;
@@ -189,11 +168,80 @@
     border-color: var(--border-color) transparent transparent transparent;
     transform: rotate(180deg) translateX(-185px) translateY(-120px);
 }
-.smile_2{
+.smile ~ .smile{
     width: 120px;
     height: 20px;
-    border: solid 1px;
-    border-radius: 0 0 12rem 12rem;
-    border-color: transparent var(--border-color) var(--border-color)  var(--border-color);
-    transform: translateX(200px) translateY(130px);
+    border-color: var(--border-color) transparent transparent  transparent;
+    
+    transform: translateX(200px) translateY(130px)rotate(180deg);
 }
+.ear{
+    width: 100px;
+    height:110px;
+    border: solid 0.0001px;
+    border-radius: 0 70px;
+    background-color: var(--skin);
+    border-color: var(--border-skin);
+}
+.earring{
+    width: 70px;
+    height: 300px;
+    background: #00d5ff;
+    border: solid 0.001px;
+    border-color: #0a7584;
+    border-radius: 1000%;
+}
+.left-ear{
+    transform: translateY(1000px) translateX(50px) ;
+}
+.left-ear .ear{
+    transform:rotate(30deg)
+}
+.right-ear{
+    transform: translateY(600px) translateX(380px) ;
+}
+.right-ear .ear{
+    transform:rotate(50deg)
+}
+.crown{
+    --crown:rgb(253, 230, 58);
+    --bordercrown:rgb(204, 186, 48);
+    transform: translateY(-1800px) translateX(650px) rotate(-20deg);
+}
+.border-crown_top{
+    width: 700px;
+    height:350px;
+    border-radius: 100rem 100rem 0 0;
+    background: rgb(204, 186, 48);
+}
+.crown_top{
+    width: 700px;
+    height:350px;
+    border-radius: 100rem 100rem 0 0;
+    background-color: rgb(253, 230, 58);
+}
+.border-crown_top .crown_top{
+    transform: scale(0.989) translateY(2px);
+}
+.border-crown_bottom{
+    width: 300px;
+    height: 100px;
+    border-radius: 1000%;
+    background-color: rgb(204, 186, 48);
+}
+.crown_bottom{
+    width:100%;
+    height: 99%;
+    border-radius: 1000%;
+    background-color: rgb(253, 230, 58);
+}
+.border-crown_bottom .crown_bottom{
+    transform: scale(0.99);
+}
+.border-crown_bottom + .border-crown_top{
+    transform: translateY(-400px) translateX(-150px);
+}
+.incline_50Kuzco{
+    transform: rotate(-20deg);
+}
+
